@@ -1,0 +1,49 @@
+@import '_bootstrap.scss';
+@import "compass/css3";
+@import "_entorno.scss";
+$color-legend:#515151;
+$color-structure:#B7B800;
+#chart-zone {
+    font-size: 13px;
+    font-family: Verdana, Geneva, sans-serif;
+    color: $color-legend;
+    padding: 20px 0px;
+    .canvas-holder {
+        max-width: 250px;
+        margin: 0 auto;
+    }
+    .box-legend {
+        margin-top: 20px;
+        max-width: 350px;
+        .title-legend {
+            font-weight: bold;
+            padding-bottom: 15px;
+        }
+        ul {
+            padding: 0px;
+            list-style: none;
+            margin: 0px;
+            li {
+                border-top: 1px dotted $color-structure;
+                padding: 10px 0px;
+                &:last-child {
+                    border-bottom: 1px dotted $color-structure;
+                }
+                span {
+                    width: 40px;
+                    height: 17px;
+                    display: block;
+                    float: left;
+                }
+            }
+        }
+        .total-legend {
+            font-weight: bold;
+            padding: 10px 0px;
+            border-bottom: 1px dotted $color-structure;
+        }
+    }
+    .help-legend {
+        margin-top: 20px;
+    }
+}

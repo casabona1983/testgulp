@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="ie6" lang="ca"> <![endif]-->
+<!--[if IE 7]>         <html class="ie7" lang="ca"> <![endif]-->
+<!--[if IE 8]>         <html class="ie8" lang="ca"> <![endif]-->
+<!--[if IE 9]>         <html class="ie9" lang="ca"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html lang="ca">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gràfica</title>
+    <!-- Mis estilos-->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+    <script src="js/app.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h2>HEADER</h2>
+        </div>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8">
+                <!--Gráfica-->
+                <div id="chart-zone">
+                    <div class="row">
+                        <div class="col-sm-5">
+                            <div class="canvas-holder">
+                                <canvas id="chart" width="250" height="250"></canvas>
+                            </div>
+                        </div>
+                        <div class="col-sm-7">
+                            <div class="box-legend">
+                                <div class="title-legend">CRÉDITOS Y TIPO DE MATERIA</div>
+                                <ul id="chart-info">
+                                    <li data-background="#B7B800" data-data="60" data-literal="Bàsica">
+                                        <div class="media">
+                                            <div class="media-left">
+                                                <span></span>
+                                            </div>
+                                            <div class="media-body">
+                                                <strong>60 créditos ECTS.</strong> Formació bàsica
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li data-background="#D2D0A2" data-data="130" data-literal="Obligatories">
+                                        <div class="media">
+                                            <div class="media-left">
+                                                <span></span>
+                                            </div>
+                                            <div class="media-body">
+                                                <strong>130 créditos ECTS.</strong> Obligatories
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li data-background="#827D00" data-data="50" data-literal="Optatives ">
+                                        <div class="media">
+                                            <div class="media-left">
+                                                <span></span>
+                                            </div>
+                                            <div class="media-body">
+                                                <strong>50 créditos ECTS.</strong> Optatives
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li data-background="#AFAC5C" data-data="20" data-literal="T.final ">
+                                        <div class="media">
+                                            <div class="media-left">
+                                                <span></span>
+                                            </div>
+                                            <div class="media-body">
+                                                <strong>20 créditos ECTS.</strong> Trabajo final de grau
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="total-legend">Total 260 créditos ECTS</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="help-legend">*El treball final de grau és una asignatura obligatòria.</div>
+                        </div>
+                    </div>
+                </div>
+                <!--/Gráfica-->
+            </div>
+            <div class="col-sm-4">
+                <aside>
+                    <h2>ASIDE</h2>
+                </aside>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <h2>FOOTER</h2>
+        </div>
+    </footer>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <p>Cuando se monta la lista de la leyenda se tiene que adjuntar la información para montar la gráfica mediante elementos 'data' para determinar el color, el literal y el valor</p>
+                    <p><strong>data-background="#AFAC5C" data-data="20" data-literal="T.final"</strong></p>
+                    <p>El contenido del archivo _entorno.scss, se utiliza para simular el tamaño del contenedor de la página de secretaria. Puede eleminarse en producción.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

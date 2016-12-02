@@ -1,0 +1,25 @@
+{
+  "name": "secretaria",
+  "version": "0.0.1",
+  "description": "Gráfica secretaria",
+  "author": "Daniel Casabona",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "browser-sync": "^2.16.0",
+    "gulp-compass": "^2.1.0",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^2.0.0",
+    "gulp-util": "^3.0.7",
+    "browserify": "^13.1.1",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "bootstrap-sass": "^3.3.7",
+    "chart.js": "^2.4.0",
+    "jquery": "^3.1.1"
+  }
+}
